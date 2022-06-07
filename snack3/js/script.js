@@ -25,16 +25,20 @@ myArray.forEach((element, i) => {
     }
 });
 
-console.log(`Con Ciclo ForEach ${nuovoArray}`);
+console.log(nuovoArray);
 
 // CON CICLO FILTER
 
-const array = myArray.filter((element, i) => {
+// const array = myArray.filter((element, i) => {
 
-    element = myArray;
-    if(i >= numeriMin && i <= numeriMax){
-        nuovoArray.push(element[i]);
-    }
-});
+//     element = myArray;
+//     if(i >= numeriMin && i <= numeriMax){
+//         // nuovoArray.push(element[i]);
+//         return nuovoArray;
+//     }
+// });
+// console.log(nuovoArray);
 
-console.log(`Con Ciclo Filter ${nuovoArray}`);
+const array = myArray.filter((element, i) => (i >= numeriMin && i <= numeriMax));
+
+console.log(array);
